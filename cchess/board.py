@@ -279,7 +279,7 @@ class BaseChessBoard(object):
             for x in range(9):
                 fench = self._board[y][x]
                 if fench:
-                    if count is not 0:
+                    if count != 0:
                         fen += str(count)
                         count = 0
                     fen += fench
